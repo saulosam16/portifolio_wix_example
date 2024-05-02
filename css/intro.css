@@ -23,29 +23,53 @@
   color: yellow;
 }
 
-.description-dev {
-  grid-column: 1;
+.description-dev {   
+  align-content: center;   
+  text-align: start;  
+  margin: auto;
+  grid-column: 1;   
+  grid-row: 2/6;
   padding: 0px 40px 0px 40px;
 }
 
 .image-dev {
-
   grid-column: 2;
 }
 
-.whatsapp-contact {
-  text-align: center;
-  padding: 15px 45px;
-  background-color: #353535;
-  font-weight: bold;
-  font-size: 14pt;
-  color: white;
-  border-radius: 5px;
-  align-self: flex-start;
+.info-profile{
+  height: 100%;  
+  display: grid;
 }
 
-.whatsapp-contact:hover {
-  background-color: #525252;
+#profile-name-title{
+  font-size: 3rem;
+  color: yellow;
+}
+
+nav h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: yellow;
+}
+
+.header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header a {  
+  transition: 0.2s;
+  color: white;
+}
+
+.header a:hover {
+  color: yellow;
+}
+
+.title_nav_bar{              
+  width: 50%;
+  margin: 50px;   
 }
 
 @media (max-width: 1024px) {

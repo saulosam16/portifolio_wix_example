@@ -1,13 +1,22 @@
-const videoPlayer = document.querySelector('.video-player');
-const video = videoPlayer.querySelector('video');
-const playButton = videoPlayer.querySelector('.play-button');
-function togglePlay() {
-    if (video.paused) {
-        video.play();
-        playButton.innerHTML = 'Pause';
-    } else {
-        video.pause();
-        playButton.innerHTML = 'Play';
-    }
-}
-playButton.addEventListener('click', togglePlay);
+const playButton = document.getElementById('playButton');
+const video = document.getElementById('myVideo');
+
+playButton.addEventListener('click', function() {
+  if (video.paused) {
+    video.play();
+    this.classList.add('playing');
+  } else {
+    video.pause();
+    this.classList.remove('playing');
+  }
+});
+
+video.addEventListener('click', function() {
+  if (video.paused) {
+    video.play();
+    playButton.classList.add('playing');
+  } else {
+    video.pause();
+    playButton.classList.remove('playing');
+  }
+});

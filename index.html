@@ -5,25 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Desenvolvedor Front End & UI Designer">
+  <meta name="description" content="Desenvolvedor Front-End">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
   <title>Meu Portifólio</title>
+  <script src="./js/sidepanel.js"></script>
+  <script src="./js/video-player.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="title_nav_bar">
-        <h1>Saulo Lima</h1>
-        <ul class="header">
-          <li><a href="#experiencie">Experiência</a></li>
-          <li><a href="#education">Formação</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
 
   <nav>
     <div class="sidenav_bar">
@@ -35,15 +25,41 @@
   </nav>
 
   <main>
+
+    <div id="mySidepanel" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closePanel()">×</a>
+      <h2>Currículo</h2>
+      <p>Ano de Nascimento: 1985</p>
+      <p>Altura: 1,78m</p>
+      <p>Cor dos olhos: Castanho</p>
+      <p>Cor do cabelo: Castanho</p>
+      <p>Idiomas: Inglês, Alemão</p>
+    </div>
+
     <section class="intro" aria-label="Introdução">
-      <div class="description-dev">
-        <h1 class="first_title hello">Olá, sou</h1>
-        <h1 class="second_title">Saulo Lima</h1>
-        <h1 class="first_title">Dev Front End / UI Designer / Empresário</h1>
+            
+      <div class="info-profile">
+        <div class="title_nav_bar">
+          <h1 id="profile-name-title">Saulo Lima</h1>
+          <ul class="header">
+            <li><a href="#biography" onclick="openPanel()">Biografia</a></li>
+            <li><a href="#experiencie">Experiência</a></li>
+            <li><a href="#education">Formação</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+  
+        <div class="description-dev">        
+          <h1 class="first_title hello">Olá, sou</h1>
+          <h1 class="second_title">Saulo Lima</h1>
+          <h1 class="first_title">Desenvolvedor / Empresário / UI Designer</h1>
+        </div>
       </div>
+
       <div class="image-profile">
         <img src="./images/perfil.jpg" alt="Imagem do Desenvolvedor">
       </div>
+
     </section>
 
     <section class="about">
@@ -58,18 +74,18 @@
         visitantes sobre como teve a ideia de iniciar o seu negócio e o que o torna diferente de seus competidores. Faça
         com que sua empresa se destaque e mostre quem você é.
       </p>
-      <button>Acesse meu curriculo</button>
+      <button onclick="openPanel()">Acesse meu curriculo</button>
     </section>
 
     <section class="portifolium">
       <h1>Portifólio</h1>
+      <video id="myVideo" controls>
+        <source src="./videos/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </section>
 
-    <section class="video-player-container">
-      <div class="video-player">
-        <video src="./videos/video.mp4"></video>
-      </div>
-    </section>
+    
 
     <section class="photos">
       <h1>Fotos</h1>
@@ -107,29 +123,7 @@
       </div>
     </section>
 
-    <footer id="contact" class="footer" aria-label="Contato">
-      <section class="footer-container">
-        <p>
-          Estou disponível para novos projetos após expediente de trabalho. Entre em contato comigo e marcamos uma
-          conversa
-          👋
-        </p>
-        <ul class="contact">
-          <li>saulosam.lima@gmail.com</li>
-          <li>
-            <a target="_blank"
-              href="https://api.whatsapp.com/send?phone=5589994602102&text=Ol%C3%A1,%20achei%20seu%20contato%20no%20seu%20portif%C3%B3lio.">
-              Whatsapp</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.linkedin.com/">Meu Linkedin</a>
-          </li>
-          <li>
-            <a target="_blank" href="https://github.com/saulosam16">Meu Github</a>
-          </li>
-        </ul>
-      </section>
-    </footer>
+    
   </main>
 </body>
 
