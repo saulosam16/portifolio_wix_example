@@ -1,0 +1,10 @@
+.photos {
+    text-align: center;
+}
+
+.photos h1 {
+    background: white;
+    color: darkcyan;
+    font-size: 5rem;
+    margin: 5rem;
+}

@@ -1,0 +1,34 @@
+.about {
+    text-align: center;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background-color: whitesmoke;
+}
+
+.about h1 {
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.about button {
+    margin: 20px;
+    padding: 10px 20px 10px 20px;
+    border: 0;
+    font-size: 1.2vw;
+    color: darkcyan;
+    background-color: yellow;
+    transition: 0.2s;
+}
+
+.about button:hover {
+    color: yellow;
+    background-color: darkcyan;
+}
+
+
+
+.about p {
+    line-height: 2;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}

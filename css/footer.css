@@ -1,0 +1,37 @@
+.footer {
+  background: #000;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 120px 40px;
+  
+  justify-items: center;
+  color: #A3A3A3;
+}
+
+.footer-container p {
+  line-height: 1.4rem;
+  max-width: 300px;
+}
+
+.contact li a {
+  color: white;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 425px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    justify-items: initial;
+  }
+}

@@ -1,0 +1,25 @@
+.portifolium {
+  text-align: center;
+}
+
+.portifolium h1 {
+  background: white;
+  color: darkcyan;
+  font-size: 5rem;
+  margin: 5rem;
+}
+
+
+
+@media (max-width: 1024px) {}
+
+.experencies h1 {}
+
+.content-experiences h2 {}
+
+.content-experiences .year {}
+}
+
+@media (max-width: 580px) {
+  .content-experiences {}
+}
